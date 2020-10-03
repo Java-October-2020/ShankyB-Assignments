@@ -1,7 +1,7 @@
 public class PythagoreanTest {
-    public static void main(String[] args) {
-        Pythagorean hypoTest= new Pythagorean();
-            double myGethypo= hypoTest.getHypo();
-            System.out.println(myGethypo(2,3));
+    public static void main(String[] args) {    
+        Pythagorean MyHypoTest= new Pythagorean();
+            double myGethypo= MyHypoTest.getHypo(5,4);
+            System.out.println(myGethypo);
     }
 }
