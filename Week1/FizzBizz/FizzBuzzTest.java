@@ -1,8 +1,7 @@
 public class FizzBuzzTest{
         public static void main(String[] args){
-            int i= 4;
             FizzBuzz iD = new FizzBuzz();
-            String fb= iD.fizzBuzz(i);
+            String fb= iD.fizzBuzz(15);
             System.out.println(fb);
         }       
 }
