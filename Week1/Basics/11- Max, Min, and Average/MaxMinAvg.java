@@ -18,8 +18,10 @@ public class MaxMinAvg{
         }
     int len= Array.length;
     double avg= sum/len;
-    System.out.println(max);
-    System.out.println(min);
-    System.out.println(avg);
+    ArrayList<Object> finalArray= new ArrayList<Object>();
+    finalArray.add(max);
+    finalArray.add(min);
+    finalArray.add(avg);
+    System.out.println(finalArray);
     }
 }
