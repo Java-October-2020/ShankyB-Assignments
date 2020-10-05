@@ -1,10 +1,12 @@
 import java.util.*;
 public class JavaBasics {
 
-        public void oneTo255(){
+        public void oneTo255(ArrayList<Object>){
+            ArrayList<Object> list = new ArrayList<Object>();
             for(int i=1; i<256;i++){
-                System.out.println(i);
-            }
+            list.add(i);
+            System.out.println(list);
+        
         }
         
         public void oddOneTo255(){
@@ -70,6 +72,8 @@ public class JavaBasics {
             }
             System.out.println(greaterthanY);
         }
+
+
 }
             
 
