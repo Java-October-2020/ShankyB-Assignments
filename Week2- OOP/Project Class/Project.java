@@ -1,23 +1,29 @@
+import java.util.*;
 public class Project{
     //class attributes
     private String name;
     private String description;
     private String owner;
+    private Double initialCost;
 
     //constructor
     public Project(String name, String description){
         this.name= name;
         this.description=description;
-        String owner= "Shanky";
-
+    }
+        
+    public Project() {
+        this.owner= "Shanky";
     }
 
-    //method overload- to have different input parameters
-    //this attribute is still valid as its described in the Project class
     public Project(String name) {
         this.name=name;
-        this.owner= owner; 
     }
+
+    public Project(Double initialCost){
+        this.initialCost=initialCost;
+    }
+
     //getter methods for each attribute of the class
     public String getName(){
         return this.name;
@@ -35,17 +41,22 @@ public class Project{
 
     public void setName(String name){
         this.name=name;
-
     }
 
     public void setDescription(String description){
         this.description=description;
-
     }
 
     public void setOwner(String owner){
         this.owner=owner;
     }
 
+    public Double getInitialCost(){
+        return this.initialCost;
+    }
 
+    public void setInitialCost(Double initialCost){
+        this.initialCost=initialCost;
+
+    }
 }
