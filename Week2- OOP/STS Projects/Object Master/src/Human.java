@@ -1,12 +1,12 @@
-
+import java.lang.*;
 public class Human {
 	protected int strength=3;
 	protected int stealth=3;
 	protected int health=100;
-	protected int intelligence=3;
+	protected Integer intelligence=3;
 		
-	//contructor
-	public Human(int strength, int stealth, int health, int intelligence) {
+	//constructor
+	public Human(int strength, int stealth, int health, Integer intelligence) {
 		this.strength=strength;
 		this.stealth=stealth;
 		this.health=health;
@@ -15,7 +15,28 @@ public class Human {
 	
 	//constructor overload
 	public Human() {
-	}	
+	}
+	
+	//constructor overload for Wizard class
+	public Human (int stealth, int strength) {
+		this.stealth=stealth;
+		this.strength=strength;
+	}
+	
+	//constructor overload for Ninja class
+	
+	public Human (int strength, int health, Integer intelligence) {
+		this.strength=strength;
+		this.health=health;
+		this.intelligence=intelligence;
+	}
+	
+	//constructor overload for Samurai class- changed order of input variable type to avoid duplicate method signature
+	public Human (int strength, Integer intelligence, int stealth) {
+		this.strength=strength;
+		this.stealth=stealth;
+		this.intelligence=intelligence;
+	}
 	
 	//getters and setters
 	public int getStrength() {
@@ -42,7 +63,7 @@ public class Human {
 		this.health = health;
 	}
 
-	public int getIntelligence() {
+	public Integer getIntelligence() {
 		return intelligence;
 	}
 
