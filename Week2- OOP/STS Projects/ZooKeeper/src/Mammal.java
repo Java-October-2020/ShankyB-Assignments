@@ -1,28 +1,15 @@
 
 public class Mammal {
-	protected String name;
 	protected String species;
 	protected int energyLevel;
 	
-//method overload
-public Mammal() {
-}
 
 //constructor
-public Mammal(String name, String species) {
-	this.name=name;
+public Mammal(String species, int energyLevel) {
 	this.species=species;
-	this.energyLevel=100;
+	this.energyLevel=energyLevel;
 }
 
-
-public String getName() {
-	return name;
-}
-
-public void setName(String name) {
-	this.name = name;
-}
 
 public String getSpecies() {
 	return species;
@@ -40,13 +27,9 @@ public void setEnergy(int energyLevel) {
 	this.energyLevel = energyLevel;
 }
 
-public int displayEnergyLevel() {
+public void displayEnergy() {
 	System.out.printf("Energy level is %s\n", this.energyLevel);
-	return energyLevel;
 }
 
 
 }
-
-
-//method 

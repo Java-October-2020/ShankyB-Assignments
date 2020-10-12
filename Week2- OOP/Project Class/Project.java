@@ -11,9 +11,8 @@ public class Project{
         this.name= name;
         this.description=description;
     }
-        
+    //method overload
     public Project() {
-        this.owner= "Shanky";
     }
 
     public Project(String name) {
