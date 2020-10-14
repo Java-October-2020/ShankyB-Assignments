@@ -17,10 +17,11 @@ public class HumanTest {
 		
 		Samurai samu1= new Samurai(10,5,5);
 		Samurai samu2= new Samurai(10,5,5);
+		Samurai samu3= new Samurai(10,5,5);
 		
-		//System.out.println(samu1.deathBlow(human1));
-		//System.out.println(samu1.meditate());
-		System.out.println(samu2.howMany());	
+		
+		System.out.println(samu1.deathBlow(human1));
+		System.out.println(samu1.meditate());
 		
 	}
 }

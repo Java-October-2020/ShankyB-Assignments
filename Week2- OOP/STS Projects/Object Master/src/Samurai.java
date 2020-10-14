@@ -1,5 +1,5 @@
 
-public class Samurai extends Human{
+public class Samurai extends Human{	
 
 	public Samurai(int strength, Integer intelligence, int stealth) {
 		super.health=300;
@@ -18,11 +18,6 @@ public class Samurai extends Human{
 	}
 	
 	//howMany() method
-	
-	public int howMany() {
-		int count=0;
-		count++;
-		return count;
-	}
+
 	
 }
